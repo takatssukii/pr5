@@ -1,0 +1,28 @@
+﻿<Window x:Class="EIS.View.ExamenSpisok"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EIS.View"
+        mc:Ignorable="d"
+        Title="Списки экзаменов" Height="560" Width="800"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#F0F0F0">
+        <DataGrid x:Name="DGridSpisokExam" IsReadOnly="True" ColumnWidth="*" AutoGenerateColumns="False" BorderThickness="0" Margin="30,171,30,30" FontSize="16">
+            <DataGrid.Columns>
+                <DataGridTextColumn Visibility="Hidden" Binding="{Binding ProModule.IdProModule}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Экзамен" Binding="{Binding ProModule.Title}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Группа" Binding="{Binding Group.Title}"></DataGridTextColumn>
+                <DataGridTemplateColumn>
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Оценить" Name="btnProsmotr" Click="btnProsmotr_Click" FontSize="16" Background="#4682B4" FontWeight="Bold"></Button>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Label Content="Список экзаменов" HorizontalAlignment="Center" Margin="0,40,0,0" VerticalAlignment="Top" FontSize="27" FontWeight="Bold" FontStyle="Italic"/>
+    </Grid>
+</Window>

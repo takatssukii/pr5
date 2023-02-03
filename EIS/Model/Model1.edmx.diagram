@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="3c361e17ce6e4d86bd90281a6386732d" Name="Diagram1">
+        <EntityTypeShape EntityType="EISModel.Aspect" Width="1.5" PointX="11.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.Criteria" Width="1.5" PointX="6.75" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.DescriptionOfJudgeAspects" Width="1.5" PointX="13.5" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.Exam" Width="1.5" PointX="5.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.Group" Width="1.5" PointX="3" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.ProModule" Width="1.5" PointX="3" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.Role" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.Speciality" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.StatusStudent" Width="1.5" PointX="6" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.StatusTeacher" Width="1.5" PointX="0.75" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.Student" Width="1.5" PointX="8.25" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.StudentResult" Width="1.5" PointX="13.5" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.SubCriteria" Width="1.5" PointX="9" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.SystemUser" Width="1.5" PointX="5.25" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.Teachers" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.TypeAspect" Width="1.5" PointX="9" PointY="16.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="EISModel.Vedomosti" Width="1.5" PointX="10.5" PointY="6" IsExpanded="true" />
+        <AssociationConnector Association="EISModel.FK_Aspect_SubCriteria" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Aspect_TypeAspect" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_DescriptionOfRefereeingAspects_Aspect" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_StudentResult_Aspect" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Criteria_ProModule" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_SubCriteria_Criteria" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Exam_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Exam_ProModule" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Exam_Teachers" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Vedomosti_Exam" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Group_Speciality" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Student_Group" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Teachers_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Teachers_Speciality" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Student_StatusStudent" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Teachers_StatusTeacher1" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_StudentResult_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_Vedomosti_Student" ManuallyRouted="false" />
+        <AssociationConnector Association="EISModel.FK_SystemUser_Teachers1" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
